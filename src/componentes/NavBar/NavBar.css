@@ -1,0 +1,15 @@
+
+.titulo {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: rgb(243, 26, 91);
+    color: whitesmoke
+}
+
+a {
+    text-transform: uppercase;
+    color: rgb(10, 79, 148);
+    text-decoration-style:solid ;
+}
