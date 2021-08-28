@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Componen } from 'react'
 import { Item } from './Item'
 
 export const ItemList = ( {productos = []})=>{ 

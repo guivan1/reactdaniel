@@ -9,6 +9,7 @@ export const Item = ( {img, nombre, desc, precio} ) => {
             <h3>{nombre}</h3>
             <p>{desc}</p>
             <p>{precio}</p>
+            {/* <Link to={`/detail/${id}`} className="btn btn-outline-primary">Ver más</Link> */}
         </div>
     )
 }
