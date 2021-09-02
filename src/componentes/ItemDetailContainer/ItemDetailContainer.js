@@ -13,23 +13,24 @@ export const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(false)
 
-    useEffect(()=>{
+    useEffect(() => {
         setLoading(true)
 
         pedirDatos()
-            .then( res => {
-                setItem( res.find( prod => prod.id === parseInt(itemId)) )
+            .then(res => {
+                console.log(itemId)
+                setItem(res.find(prod => prod.id === parseInt(itemId)))
             })
-            .finally(()=> { setLoading(false)})
+            .finally(() => { setLoading(false) })
 
     }, [itemId])
 
 
     return (
         <div>
-            {loading 
+            {loading
                 ? <h2>Cargando...</h2>
-                : <ItemDetail {...item}/>
+                : <ItemDetail {...item} />
             }
         </div>
     )

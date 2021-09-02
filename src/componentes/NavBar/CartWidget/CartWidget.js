@@ -17,5 +17,3 @@ export const CartWidget = ({cantidad=0}) => {
 
 
 // import { FaCartArrowDow } from "react-icons/fa"
-
-

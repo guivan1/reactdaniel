@@ -1,15 +1,17 @@
 export const stock = [
     {
         id: 1,
-        categoria:"mother",
+        categoria: "mother",
         nombre: "MOTHER",
         precio: 60000,
         desc: "Mother Assus",
         img: "/img/producto1.jpg",
+        stock: 50
+
     },
     {
         id: 2,
-        categoria:"periferico",
+        categoria: "periferico",
         nombre: "TECLADO",
         precio: 7000,
         desc: "Teclado Gamer",
@@ -17,7 +19,7 @@ export const stock = [
     },
     {
         id: 3,
-        categoria:"gabinete",
+        categoria: "gabinete",
         nombre: "Gabinete",
         precio: 15000,
         desc: " Gabinete gamer",
@@ -25,7 +27,7 @@ export const stock = [
     },
     {
         id: 4,
-        categoria:"monitor",
+        categoria: "monitor",
         nombre: "MONITOR",
         precio: 17000,
         desc: "MONITOR FHD",
@@ -33,7 +35,7 @@ export const stock = [
     },
     {
         id: 5,
-        categoria:"componente",
+        categoria: "componente",
         nombre: "PLACA DE VIDEO",
         precio: 140000,
         desc: "Placa de video",
@@ -41,11 +43,30 @@ export const stock = [
     },
     {
         id: 6,
-        categoria:"componente",
+        categoria: "componente",
         nombre: "PROCESADOR",
         precio: 55000,
         desc: "Procesador AMD",
         img: "/img/producto6.jpg"
+    },
+    {
+        id: 7,
+        categoria: "mother",
+        nombre: "MOTHER",
+        precio: 40000,
+        desc: "Mother Assus",
+        img: "/img/producto1.jpg",
+        stock: 50
+
+    },
+    {
+        id: 8,
+        categoria: "mother",
+        nombre: "MOTHER",
+        precio: 5000,
+        desc: "Mother Assus",
+        img: "/img/producto1.jpg",
+        stock: 50
+
     }
 ]
- 
