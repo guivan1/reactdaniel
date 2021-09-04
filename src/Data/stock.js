@@ -4,7 +4,7 @@ export const stock = [
         categoria: "mother",
         nombre: "MOTHER",
         precio: 60000,
-        desc: "Mother Assus",
+        desc: "Mother Assus EL MAS GRANDE Y MAS RAPIDO",
         img: "/img/producto1.jpg",
         stock: 50
 
@@ -15,7 +15,8 @@ export const stock = [
         nombre: "TECLADO",
         precio: 7000,
         desc: "Teclado Gamer",
-        img: "/img/producto2.jpg"
+        img: "/img/producto2.jpg",
+        stock: 800,
     },
     {
         id: 3,
@@ -23,7 +24,8 @@ export const stock = [
         nombre: "Gabinete",
         precio: 15000,
         desc: " Gabinete gamer",
-        img: "/img/producto3.jpg"
+        img: "/img/producto3.jpg",
+        stock: 150,
     },
     {
         id: 4,
@@ -31,7 +33,8 @@ export const stock = [
         nombre: "MONITOR",
         precio: 17000,
         desc: "MONITOR FHD",
-        img: "/img/producto4.jpg"
+        img: "/img/producto4.jpg",
+        stock: 110,
     },
     {
         id: 5,
@@ -39,7 +42,8 @@ export const stock = [
         nombre: "PLACA DE VIDEO",
         precio: 140000,
         desc: "Placa de video",
-        img: "/img/producto5.jpg"
+        img: "/img/producto5.jpg",
+        stock: 120,
     },
     {
         id: 6,
@@ -47,14 +51,17 @@ export const stock = [
         nombre: "PROCESADOR",
         precio: 55000,
         desc: "Procesador AMD",
-        img: "/img/producto6.jpg"
+        img: "/img/producto6.jpg",
+        stock: 130,
+
+
     },
     {
         id: 7,
         categoria: "mother",
         nombre: "MOTHER",
         precio: 40000,
-        desc: "Mother Assus",
+        desc: "Mother Assus ROBERTO EL MAS TRABAJADOR",
         img: "/img/producto1.jpg",
         stock: 50
 
@@ -64,7 +71,7 @@ export const stock = [
         categoria: "mother",
         nombre: "MOTHER",
         precio: 5000,
-        desc: "Mother Assus",
+        desc: "Mother Assus CARLOS EL MAS LIVIANITO",
         img: "/img/producto1.jpg",
         stock: 50
 

@@ -4,6 +4,8 @@ import { pedirDatos } from '../../helpers/pedirDatos'
 import { ItemList } from './ItemList'
 
 export const ItemListContainer = () => {
+    
+    //  const {loading, setLoading} = useContext(UiContext)
     const { elementos } = useParams()
     console.log(elementos)
     const [data, setData] = useState([])
@@ -25,7 +27,7 @@ export const ItemListContainer = () => {
                 setLoading(false)
             })
 
-    }, [elementos])
+    }, [elementos, setLoading])
 
 
     return (
