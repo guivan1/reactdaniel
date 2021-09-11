@@ -21,7 +21,7 @@ export const stock = [
     {
         id: 3,
         categoria: "gabinete",
-        nombre: "Gabinete",
+        nombre: "GABINETE",
         precio: 15000,
         desc: " Gabinete gamer",
         img: "/img/producto3.jpg",
