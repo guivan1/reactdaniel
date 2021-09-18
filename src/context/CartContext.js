@@ -6,7 +6,7 @@ export const CartContext = createContext()
 
 // custom provider
 
-export const CartProvider = ({children}) => {
+export const CartProvider = ({ children }) => {
 
     const [carrito, setCarrito] = useState([])
 
@@ -18,7 +18,7 @@ export const CartProvider = ({children}) => {
     }
 
     const eliminarDelCarrito = (id) => {
-        setCarrito( carrito.filter(prod => prod.id !== id) )
+        setCarrito(carrito.filter(prod => prod.id !== id))
     }
 
     const cantidadCarrito = () => {
@@ -32,9 +32,12 @@ export const CartProvider = ({children}) => {
     const isInCart = (id) => {
         return carrito.some(el => el.id === id)
     }
+    const totalCarrito = () => {
+        return carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0)
 
+    }
     return (
-        <CartContext.Provider value={{carrito, isInCart, agregarAlCarrito, eliminarDelCarrito, cantidadCarrito, vaciarCarrito}}>
+        <CartContext.Provider value={{carrito, totalCarrito, isInCart, agregarAlCarrito, eliminarDelCarrito, cantidadCarrito, vaciarCarrito}}>
             {children}
         </CartContext.Provider>
     )

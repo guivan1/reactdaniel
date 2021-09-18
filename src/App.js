@@ -8,16 +8,16 @@ import { ItemDetailContainer } from "./componentes/ItemDetailContainer/ItemDetai
 import { CartProvider } from "./context/CartContext";
 import { CartScreen } from "./componentes/CartScreen/CartScreen";
 import { UiContextProvider } from "./context/UiContext";
-
+import { Checkout } from "./componentes/Checkout/Checkout";
 function App() {
 
 
 
   return (
     <>
-    <CartProvider>
-      <UiContextProvider>
-        
+      <CartProvider>
+        <UiContextProvider>
+
           <BrowserRouter>
 
             <NavBar />
@@ -39,7 +39,10 @@ function App() {
               <Route exact path="/cart">
                 <CartScreen />
               </Route>
-              
+
+              <Route exact path="/checkout">
+                <Checkout />
+              </Route>
               <Route path="*">
                 <Redirect to="/" />
               </Route>
@@ -47,8 +50,8 @@ function App() {
             </Switch>
 
           </BrowserRouter>
-     
-      </UiContextProvider>
+
+        </UiContextProvider>
       </CartProvider>
     </>
 
